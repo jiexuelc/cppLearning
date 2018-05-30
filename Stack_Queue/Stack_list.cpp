@@ -3,7 +3,7 @@
 	> Author: jiexue
 	> Mail: jiexuelc@163.com
 	> Created Time: Wed 30 May 2018 09:41:12 PM CST
-	> Description: 利用线性链表模拟栈操作(在链表首push与pop)
+	> Description: 利用单向线性链表模拟栈操作(在链表首push与pop)
  ************************************************************************/
 
 #include<iostream>
@@ -196,7 +196,7 @@ bool Stack::empty()const
 int main()
 {
 	Stack s;
-    try{
+	try{
         s.push("liranlong");
         s.push("lichao");
 		s.push("wanglin");
