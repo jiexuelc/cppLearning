@@ -3,6 +3,7 @@
 	> Author: jiexue
 	> Mail: jiexuelc@163.com
 	> Created Time: Thu 17 May 2018 04:59:51 PM CST
+	> Description: 异常练习
  ************************************************************************/
 
 #include<iostream>

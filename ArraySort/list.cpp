@@ -3,6 +3,7 @@
 	> Author: jiexue
 	> Mail: jiexuelc@163.com
 	> Created Time: Mon 21 May 2018 08:56:16 PM CST
+	> Description: 链表C++实现以及链表的增、删、查、改、倒序、排序操作(节点交换法)
  ************************************************************************/
 
 #include<iostream>

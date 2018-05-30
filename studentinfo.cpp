@@ -3,6 +3,7 @@
 	> Author: jiexue
 	> Mail: jiexuelc@163.com
 	> Created Time: Thu 17 May 2018 07:42:11 PM CST
+	> Description: 学生信息管理系统(未完成)
  ************************************************************************/
 
 #include<iostream>
