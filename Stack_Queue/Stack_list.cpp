@@ -160,7 +160,6 @@ void Chain::clear()
 
 class Stack{
     Chain l;
-    int cur;
 public:
     //Stack():cur(0){}
     void push(const T& d);
@@ -197,13 +196,13 @@ int main()
 {
 	Stack s;
 	try{
-        s.push("liranlong");
-        s.push("lichao");
+		s.push("liranlong");
+		s.push("lichao");
 		s.push("wanglin");
-        s.push("lichun");
-        s.push("limao");
-        s.push("lilin");
-        s.push("wanglin");
+		s.push("lichun");
+		s.push("limao");
+		s.push("lilin");
+		s.push("wanglin");
     }
     catch(const char *e){
         cout << "异常：" << e <<endl;
