@@ -22,10 +22,10 @@ int main()
 		cout << ai[i] << ' ';
 	}
 	cout << endl;
-	clock_t t1 = clock();
-	sort(ai,N);
-	clock_t t2 = clock();
-	cout << double(t2-t1) / CLOCKS_PER_SEC * 1000 << "ms" << endl;
+	clock_t t1 = clock();//获取运行前时钟
+	sort(ai,N);//排序算法
+	clock_t t2 = clock();//获取运行后时钟
+	cout << double(t2-t1) / CLOCKS_PER_SEC * 1000 << "ms" << endl;//计算算法消耗的时间复杂度
 	for(int i = 0; i < 16; i++){
 		cout << ai[i] << ' ';
 	}
