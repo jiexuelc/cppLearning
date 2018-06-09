@@ -8,6 +8,7 @@
 
 #include<iostream>
 using namespace std;
+
 class Complex{
     double real;
     double imag;
@@ -68,4 +69,3 @@ int main()
     cout << ++a;
     cout << b++ << b;
 }
-
