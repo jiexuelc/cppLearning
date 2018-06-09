@@ -3,11 +3,13 @@
 	> Author: jiexue
 	> Mail: jiexuelc@163.com
 	> Created Time: Thu 31 May 2018 09:54:44 PM CST
+	> Description: 
  ************************************************************************/
 
 #ifndef _QUEUE_LIST_H
 #define _QUEUE_LIST_H 1
 typedef int T;
+
 struct chainNode
 {
 	T element;

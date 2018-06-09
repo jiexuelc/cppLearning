@@ -9,7 +9,6 @@
 #include"queue_list.h"
 using namespace std;
 
-
 Chain::Chain(int initial)//构造函数
 {
 	if(initial < 0)
