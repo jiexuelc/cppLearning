@@ -3,7 +3,7 @@
 	> Author: jiexue
 	> Mail: jiexuelc@163.com
 	> Created Time: Wed 09 May 2018 06:58:54 PM CST
-	> Description: 多态
+	> Description: 多态实现１
  ************************************************************************/
 
 #include<iostream>
@@ -59,4 +59,3 @@ int main()
 	delete o;o=NULL;
 	return 0;
 }
-
