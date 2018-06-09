@@ -3,7 +3,7 @@
 	> Author: jiexue
 	> Mail: jiexuelc@163.com
 	> Created Time: Wed 09 May 2018 04:05:48 PM CST
-	> Description: 多态实现
+	> Description: 多态实现２
  ************************************************************************/
 
 #include<iostream>
