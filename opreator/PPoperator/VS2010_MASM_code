@@ -1,0 +1,49 @@
+#include <cstdio>
+#include <cstdlib>
+
+int main()
+{
+00E81530  push        ebp  
+00E81531  mov         ebp,esp  
+00E81533  sub         esp,0CCh  
+00E81539  push        ebx  
+00E8153A  push        esi  
+00E8153B  push        edi  
+00E8153C  lea         edi,[ebp-0CCh]  
+00E81542  mov         ecx,33h  
+00E81547  mov         eax,0CCCCCCCCh  
+00E8154C  rep stos    dword ptr es:[edi]  
+
+    int d = 4;
+00E8154E  mov         dword ptr [d],4  ;d=4;
+    (++d) += d++;                           ;以下的注释可能不符合汇编规范，凑合看，是这么个意思
+00E81555  mov         eax,dword ptr [d]     ;eax = d = 4
+00E81558  add         eax,1                 ;eax = eax+1 = 5
+00E8155B  mov         dword ptr [d],eax     ;d = eax = 5
+00E8155E  mov         ecx,dword ptr [d]     ;ecx = d = 5
+00E81561  add         ecx,dword ptr [d]     ;ecx = ecx + d = 10
+00E81564  mov         dword ptr [d],ecx     ;d = ecx = 10
+00E81567  mov         edx,dword ptr [d]     ;edx = d = 10
+00E8156A  add         edx,1                 ;edx = edx + 1 = 11
+00E8156D  mov         dword ptr [d],edx     ;d = edx = 11
+    printf("%d",d);
+00E81570  mov         esi,esp  
+00E81572  mov         eax,dword ptr [d]  
+00E81575  push        eax  
+00E81576  push        offset std::tr1::integral_constant<bool,0>::value (0E8773Ch)  
+00E8157B  call        dword ptr [__imp__printf (0E8A3F0h)]  
+00E81581  add         esp,8  
+00E81584  cmp         esi,esp  
+00E81586  call        @ILT+400(__RTC_CheckEsp) (0E81195h)  
+
+	system("PAUSE");
+00E8158B  mov         esi,esp  
+00E8158D  push        offset std::tr1::integral_constant<unsigned int,0>::value (0E87740h)  
+00E81592  call        dword ptr [__imp__system (0E8A3ECh)]  
+00E81598  add         esp,4  
+00E8159B  cmp         esi,esp  
+00E8159D  call        @ILT+400(__RTC_CheckEsp) (0E81195h)  
+
+    return 0;
+00E815A2  xor         eax,eax  
+}
